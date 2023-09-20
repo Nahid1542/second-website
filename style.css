@@ -42,6 +42,17 @@ header .nav ul li a{
 header .nav ul li a:hover{
     color: #7f97ff;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+    line-height: 90px;
+
+    
+}
+#check{
+    display: none;
+}
 /*SECtion 1*/
 .one{
     background-color: whitesmoke;
@@ -67,9 +78,7 @@ header .nav ul li a:hover{
     height: 600px;
     padding-left: 15px;
 }
-.text h3{
 
-}
 .text h1{
     font-size: 60px;
 }
@@ -93,7 +102,7 @@ header .nav ul li a:hover{
 
 /*secton2*/
 
-.two{
+#two{
     width: 100%;
     height: 600px;
     display: flex;
@@ -101,14 +110,14 @@ header .nav ul li a:hover{
     align-items: center;
     background-color: whitesmoke;
 }
-.two div{
+#two div{
     width: 40%;
     margin: 0px auto;
 }
-.two img{
+#two img{
     width: 90%;
 }
-.two .image{
+#two .image{
     padding-left: 150px;
 }
 .lekha h3{
@@ -225,3 +234,351 @@ header .nav ul li a:hover{
 }
 
 /*section4*/
+
+/*portfolop*/
+
+.five{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.five .txt{
+    text-align: center;
+}
+.five .txt h1{
+    font-size: 35px;
+    color: rgba(0,0,0,0.9);
+    text-transform: capitalize;
+}
+.five .txt p{
+    color:rgba(0,0,0,0.6);
+}
+.five .portpic{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.portpic div{
+    width: 340px;
+    height: 339px;
+    margin: 40px 30px;
+    text-align: center;
+}
+.portpic div h1{
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+}
+.portpic div p{
+    color: rgba(0,0,0,0.6);
+    line-height: 0;
+}
+.portpic div figure{
+    background: linear-gradient(40deg, #7f97ff 43%, #7f97ee 70%);
+    overflow: hidden;
+    width: 340px;
+    height: 339px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3%;
+}
+.five .portpic div figure:hover img{
+    opacity: 0.2;
+}
+
+/*portfolio*/
+
+/*pricing table*/
+
+.six{
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+}
+.six .txt3{
+    text-align: center;
+    padding: 2% 0;
+
+}
+.six .txt3 h1{
+    font-size: 40px;
+    padding-top: 15px;
+}
+.six .txt3 p{
+    color: rgba(0,0,0,0.7);
+}
+.six .parent{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0  auto;
+}
+.six .table1{
+    width: 250px;
+    height: 450px;
+    background-color: rgb(249,240,255);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.six .table1 h1{
+    font-size: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.six .table1 input{
+    outline: none;
+    background-color: #8293ff;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.six .table1 p{
+    color: rgba(0,0,0,0.8);
+}
+.six .table1:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    border: 1px solid rgba(130,147,255,0.5);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.6);
+    transform: scale(1.1);
+}
+.six .table1:hover input{
+background-color: white;
+color: gainsboro;
+}
+/*pricing table*/
+
+/*footer*/
+footer{
+    background-color: rgb(4,9,30);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    color: white;
+    margin-top: 160px;
+}
+footer .foot{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+footer .foot .about p{
+    color: rgba(255,255,255,0.5);
+    width: 400px;
+    text-align: left;
+}
+footer .foot .about input{
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 140px 10px 10px;
+}
+footer .foot .about button{
+    font-size: 18px;
+    color: white;
+    background-color: #7f97ee;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 9px 15px;
+    margin-left: -4px;
+}
+footer .foot .about a{
+    text-decoration: none;
+    color: white;
+}
+footer .foot .about a i{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+footer .foot .about a:hover{
+    color: #8293ff;
+}
+
+
+/*footer*/
+
+@media (max-width:560px) {
+    header{
+        width: 100%;
+        height: auto;
+        position:absolute;
+    }
+    header .logo{
+        margin-left: 10px;
+        padding: 25px;
+    }
+    .checkbtn{
+        display: block;
+        position: relative;
+        left: 181px;
+    }
+    
+    header .nav ul{
+        position: fixed;
+        width: 20%;
+        height: 60vh;
+        background-color:gainsboro;
+        top: 80px;
+        left: -200%;
+        transition: all 0.5s;
+        display: inline-block;
+    }
+    header .nav ul li{
+        line-height: 5px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0px;
+    }
+
+
+
+    .one{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .one .text{
+        margin: auto;
+        padding: 0;
+    }
+    .text h3{
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .img img{
+        margin-top: 50px;
+        margin-left: 78px;
+        width:300px ;
+        height: 200px;
+        margin-bottom: 20px;
+}
+
+
+#two{
+    display:block;
+    width: 100%;
+    height: 60vh;
+    top: -40px;
+    position: relative;
+}
+#two .image img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 80px;
+    right: 40px;
+}
+.lekha h3{
+    margin-top: -140px;
+}.lekha h1{
+    position: relative;
+    left: -80px;
+    top: 40px;
+}
+.lekha p{
+    width: 233%;
+    margin-left: -90px;
+    margin-top: 80px;
+    
+}
+.three{
+    width: 100%;
+}
+.text2 h1{
+    font-size: 25px;
+    margin-left: 0px;
+}
+.text2 p{
+    font-size: 10px;
+    width: 100%;
+    position: relative;
+    left:0px ;
+}
+.three .service{
+    width:100%;
+    position: relative;
+    left: 0px;
+    height: 520px;
+}
+.service .ser1 i{
+    font-size: 15px;
+}
+.service .ser1 p{
+    height: 100px;
+    overflow: hidden;
+}
+.service .ser2{
+    display: flex;
+    padding-top: 10px;
+}
+.service .ser2 i{
+    font-size: 15px;
+}
+.service .ser2 p{
+    height: 100px;
+    overflow: scroll;
+}
+.four{
+    width: 100%;
+}
+.five{
+    width: 100%;
+}
+.four div{
+    position: relative;
+    left: 9px;
+    margin-left: 10px;
+}
+.five .txt h1{
+    font-size: 25px;
+}
+.six{
+    width: 100%;
+}
+.six .parent{
+    position: relative;
+    left: 50px;
+    display: block;
+}
+.parent .table1{
+    margin-top: 30px;
+}
+footer{
+    width: 100%;
+    height:60vh;
+    position: relative;
+    top: 80em;
+}
+footer .foot{
+    display: block;
+}
+.foot .about{
+    margin-top: 30px;
+}
+.foot .about button{
+    margin-top: 10px;
+    float: right;
+    margin-right: 24px;
+    margin-bottom: 40px;
+}
+}
